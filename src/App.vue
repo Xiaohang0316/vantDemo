@@ -3,18 +3,21 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <Department />
     <Postdepartment/>
+    <VantList/>
   </div>
 </template>
 
 <script>
 import Department from './components/department.vue'
 import Postdepartment from './components/postdepartment.vue'
+import VantList from './components/vantList.vue'
 
 export default {
   name: 'App',
   components: {
     Department,
-    Postdepartment
+    Postdepartment,
+    VantList
   }
 }
 </script>
