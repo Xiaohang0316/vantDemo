@@ -3,9 +3,13 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <Department />
     <Postdepartment />
-    <div class="vantList">
-      <VantList />
+    <div class="vantheight">
+      <div class="headeraa"></div>
+      <div class="vantList">
+        <VantList />
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -32,14 +36,20 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  .vantList {
-    height: 200px;
-    overflow: auto;
-    &::-webkit-scrollbar {
-      /*隐藏滚轮*/
-      display: none;
+  .vantheight {
+    height: 300px;
+    .headeraa {
+      background: linear-gradient(180deg, #6EA3F4 0%, rgba(212, 232, 255, 0) 100%);
+      height: 100px;
     }
-
+    .vantList {
+      height: 200px;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        /*隐藏滚轮*/
+        display: none;
+      }
+    }
   }
 }
 </style>
