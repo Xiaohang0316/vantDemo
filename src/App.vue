@@ -32,13 +32,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-    ::-webkit-scrollbar {
-      /*隐藏滚轮*/
-      display: none;
-    }
   .vantList {
     height: 200px;
     overflow: auto;
+    &::-webkit-scrollbar {
+      /*隐藏滚轮*/
+      display: none;
+    }
+
   }
 }
 </style>
